@@ -44,6 +44,7 @@
     .section-label{margin:0 0 12px;color:var(--purple);font-size:.75rem;font-weight:750;letter-spacing:.16em;text-transform:uppercase}
     h2{margin:0 0 30px;color:var(--purple);font-size:clamp(2rem,5vw,3rem);font-weight:500;line-height:1.2;letter-spacing:-.03em}
     h3{margin:0 0 12px;color:var(--purple);font-size:clamp(1.35rem,3vw,1.72rem);font-weight:500;line-height:1.35}
+    .translation{color:#746a7e;font-size:.78em}
     p{margin:0 0 22px}
     .intro{font-size:1.14rem;line-height:1.82}
     .entry{padding:0 0 62px;margin:0 0 62px;border-bottom:1px solid var(--line)}
@@ -90,14 +91,12 @@
   <main>
     <section id="about">
       <p class="section-label">About</p>
-      <h2>Reading the chemical fingerprints of galaxies</h2>
       <p class="intro">I am a Brazilian undergraduate at Northwestern University studying Theatre and Physics &amp; Astronomy. At Northwestern’s Center for Interdisciplinary Exploration and Research in Astrophysics, I investigate what emission-line spectra can reveal about distant galaxies.</p>
       <p>My work brings together observational astronomy, quantitative analysis, and science communication. I am especially interested in how careful measurements can recover physical information from the faintest signals—and how those results can be made understandable beyond astronomy.</p>
     </section>
 
     <section id="research">
       <p class="section-label">Research</p>
-      <h2>Selected projects</h2>
 
       <article class="entry">
         <p class="meta">CIERA · Northwestern University · 2024–present</p>
@@ -108,7 +107,6 @@
         <figure class="photo"><img src="keck.png" alt="Katarina Andrade outside the W. M. Keck Observatory on Mauna Kea" loading="lazy"><figcaption>At the W. M. Keck Observatory on Mauna Kea, Hawaiʻi.</figcaption></figure>
         <div class="links">
           <a class="button" href="Katarina_Andrade_Summer_Report%20(2).pdf" target="_blank" rel="noopener">Research report</a>
-          <a class="button" href="https://doi.org/10.3847/2041-8213/ad07dc" target="_blank" rel="noopener">CECILIA paper</a>
         </div>
       </article>
 
@@ -117,22 +115,24 @@
         <h3>A spectroscopic analysis of the Little Red Dots</h3>
         <p>Working with Professor Meg Urry and Alessandro Peca, I analyzed 22 JWST spectra of compact, unusually red sources in the early universe. I searched for high-ionization [Ne V] emission, a possible sign of accreting black holes. No individual detection exceeded 3σ, so I used the surrounding spectral noise to place quantitative upper limits on the line strength.</p>
         <div class="links">
-          <a class="button" href="Little%20Red%20Dots%20Summer%2025%27%20YALE%20-%20Katarina%20Andrade%20(1).pdf" target="_blank" rel="noopener">View presentation</a>
-          <a class="button" href="https://doi.org/10.3847/1538-4357/adbc7d" target="_blank" rel="noopener">Background paper</a>
+          <a class="button" href="Little%20Red%20Dots%20Summer%2025%27%20YALE%20-%20Katarina%20Andrade%20(1).pdf" target="_blank" rel="noopener">Research report</a>
         </div>
       </article>
 
       <div class="writing">
-        <p class="meta">Earlier research communication · Portuguese</p>
-        <h3>Black holes at the centers of galaxies</h3>
-        <p>An earlier astronomy project exploring the evidence for black holes in galactic centers and communicating the scientific context in Portuguese.</p>
-        <a href="Resumo%20Expandido.pdf" target="_blank" rel="noopener">Read the extended abstract →</a>
+        <p class="meta">High-school research · Citizen science</p>
+        <h3><span lang="pt-BR">Buracos Negros Supermassivos no Centro de Galáxias</span> <span class="translation">(Supermassive Black Holes at the Centers of Galaxies)</span></h3>
+        <p>I was privileged to become involved in astrophysical research while I was in high school during the pandemic. Using a computer borrowed from my grandmother, I analyzed wide-field images provided through the National Astronomical Observatory of Japan’s GALAXY CRUISE software, contributing to its search for active galactic nuclei as a <strong>citizen scientist</strong>.</p>
+        <p>My work in this program culminated in an article submission titled <em>“Buracos Negros Supermassivos no Centro de Galáxias”</em> to the Brazilian journal <em>Cadernos de Astronomia</em> (“Astronomy Journals”). Through this project, I gained experience with scientific collaboration and writing for publication.</p>
+        <div class="links">
+          <a class="button" href="Resumo%20Expandido.pdf" target="_blank" rel="noopener">Research report (Portuguese)</a>
+          <a class="button" href="Abstract%20(1).pdf" target="_blank" rel="noopener">Abstract (English)</a>
+        </div>
       </div>
     </section>
 
     <section id="outreach">
       <p class="section-label">Outreach</p>
-      <h2>Making astronomy an invitation</h2>
 
       <article class="entry">
         <p class="meta">CIERA REACH · 2026</p>
@@ -154,7 +154,6 @@
     </section>
 
     <section id="cv">
-      <p class="section-label">CV</p>
       <h2>Curriculum vitae</h2>
       <div class="cv-box">
         <p>Research experience, presentations, outreach, education, funding, and awards.</p>
