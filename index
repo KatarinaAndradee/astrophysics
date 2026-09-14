@@ -1,0 +1,1268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Katarina Andrade | Astrophysics Research</title>
+
+  <meta
+    name="description"
+    content="Katarina Andrade is a Northwestern undergraduate researcher studying distant galaxies, emission-line spectroscopy, and black-hole activity."
+  >
+
+  <style>
+    :root {
+      --night: #07182c;
+      --blue: #123b60;
+      --cyan: #53cdec;
+      --gold: #f5c86a;
+      --paper: #f4f7fa;
+      --white: #ffffff;
+      --ink: #11243a;
+      --muted: #5d7186;
+      --line: #d7e2eb;
+      --max: 1160px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 80px;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 17px;
+      line-height: 1.65;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .wrap {
+      width: min(calc(100% - 36px), var(--max));
+      margin: auto;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(7, 24, 44, 0.96);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .nav-inner {
+      min-height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .name {
+      color: white;
+      font-family: Georgia, serif;
+      font-size: 1.1rem;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 22px;
+      overflow-x: auto;
+    }
+
+    .nav-links a {
+      color: #cad9e7;
+      font-size: 0.85rem;
+      font-weight: bold;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .nav-links a:hover {
+      color: var(--cyan);
+    }
+
+    .hero {
+      min-height: 680px;
+      display: grid;
+      align-items: center;
+      overflow: hidden;
+      color: white;
+      background:
+        radial-gradient(circle at 75% 25%, rgba(83, 205, 236, 0.2), transparent 28rem),
+        radial-gradient(circle at 15% 80%, rgba(245, 200, 106, 0.11), transparent 25rem),
+        linear-gradient(135deg, var(--night), var(--blue));
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.25fr 0.75fr;
+      gap: 70px;
+      align-items: center;
+      padding: 90px 0;
+    }
+
+    .eyebrow {
+      color: var(--cyan);
+      font-size: 0.78rem;
+      font-weight: bold;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin-top: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.1;
+    }
+
+    h1 {
+      max-width: 760px;
+      margin-bottom: 24px;
+      font-size: clamp(3rem, 7vw, 6.2rem);
+      letter-spacing: -0.055em;
+    }
+
+    h2 {
+      font-size: clamp(2.2rem, 5vw, 4rem);
+      letter-spacing: -0.04em;
+    }
+
+    .hero-text {
+      max-width: 710px;
+      color: #d6e4ef;
+      font-size: 1.2rem;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 18px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 999px;
+      color: white;
+      font-size: 0.9rem;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .button.primary {
+      border-color: var(--gold);
+      background: var(--gold);
+      color: var(--night);
+    }
+
+    .research-card {
+      padding: 30px;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 28px;
+      background: rgba(255, 255, 255, 0.07);
+    }
+
+    .spectrum {
+      height: 76px;
+      margin-bottom: 24px;
+      border-radius: 15px;
+      background:
+        linear-gradient(
+          90deg,
+          transparent 8%,
+          var(--cyan) 8.5%,
+          transparent 9%,
+          transparent 28%,
+          var(--gold) 29%,
+          transparent 30%,
+          transparent 57%,
+          #ff8966 58%,
+          transparent 59%,
+          transparent 81%,
+          var(--cyan) 82%,
+          transparent 83%
+        ),
+        #04101e;
+    }
+
+    .research-card h2 {
+      margin-bottom: 12px;
+      font-size: 1.7rem;
+      letter-spacing: normal;
+    }
+
+    .research-card p {
+      margin-bottom: 0;
+      color: #cbdbe7;
+    }
+
+    section {
+      padding: 100px 0;
+    }
+
+    .white {
+      background: white;
+    }
+
+    .section-heading {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 50px;
+      margin-bottom: 45px;
+    }
+
+    .section-heading p {
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .kicker {
+      margin-bottom: 10px;
+      color: #147c9e;
+      font-size: 0.76rem;
+      font-weight: bold;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 70px;
+    }
+
+    .about-lead {
+      margin-top: 0;
+      color: var(--blue);
+      font-family: Georgia, serif;
+      font-size: 1.9rem;
+      line-height: 1.4;
+    }
+
+    .facts {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      overflow: hidden;
+    }
+
+    .fact {
+      min-height: 150px;
+      padding: 24px;
+      border: 1px solid var(--line);
+      background: var(--paper);
+    }
+
+    .fact strong {
+      display: block;
+      margin-bottom: 10px;
+      color: var(--night);
+      font-family: Georgia, serif;
+      font-size: 1.8rem;
+    }
+
+    .fact span {
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    .projects {
+      display: grid;
+      gap: 24px;
+    }
+
+    .project {
+      display: grid;
+      grid-template-columns: 90px 1fr;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 26px;
+      background: white;
+      box-shadow: 0 18px 50px rgba(17, 36, 58, 0.07);
+    }
+
+    .number {
+      padding-top: 32px;
+      text-align: center;
+      background: linear-gradient(var(--cyan), #d1f5fc);
+      color: var(--night);
+      font-family: Georgia, serif;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    .project:nth-child(2) .number {
+      background: linear-gradient(#ff9c7d, #ffe0d6);
+    }
+
+    .project:nth-child(3) .number {
+      background: linear-gradient(var(--gold), #fff0c8);
+    }
+
+    .project:nth-child(4) .number {
+      background: linear-gradient(#b9aaff, #ebe7ff);
+    }
+
+    .project-content {
+      padding: 36px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 15px;
+    }
+
+    .tag {
+      padding: 5px 10px;
+      border-radius: 999px;
+      background: #eaf1f6;
+      color: #3d5870;
+      font-size: 0.7rem;
+      font-weight: bold;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .project h3 {
+      margin-bottom: 12px;
+      font-size: clamp(1.65rem, 3vw, 2.45rem);
+    }
+
+    .project p {
+      color: var(--muted);
+    }
+
+    .project-details {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin: 25px 0;
+    }
+
+    .project-details div {
+      padding-top: 12px;
+      border-top: 2px solid var(--line);
+    }
+
+    .project-details strong {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 0.82rem;
+    }
+
+    .project-details span {
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    details {
+      padding-top: 16px;
+      border-top: 1px solid var(--line);
+    }
+
+    summary {
+      cursor: pointer;
+      color: var(--blue);
+      font-weight: bold;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-top: 22px;
+    }
+
+    .link {
+      padding: 8px 12px;
+      border: 1px solid #c7d8e4;
+      border-radius: 10px;
+      color: #12617d;
+      font-size: 0.83rem;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .link:hover {
+      background: #edfaff;
+      border-color: #1780a3;
+    }
+
+    .dark {
+      background: var(--night);
+      color: white;
+    }
+
+    .dark .kicker {
+      color: var(--cyan);
+    }
+
+    .dark .section-heading p {
+      color: #b9cddd;
+    }
+
+    .leadership-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 22px;
+    }
+
+    .dark-card {
+      padding: 34px;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 24px;
+      background: rgba(255, 255, 255, 0.055);
+    }
+
+    .dark-card h3 {
+      font-size: 1.8rem;
+    }
+
+    .dark-card p,
+    .dark-card li {
+      color: #c8d8e5;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+
+    figure {
+      margin: 0;
+      overflow: hidden;
+      border-radius: 18px;
+      background: #dce7ef;
+    }
+
+    figure:first-child,
+    figure:last-child {
+      grid-column: span 2;
+    }
+
+    figure img {
+      height: 310px;
+      object-fit: cover;
+    }
+
+    figcaption {
+      padding: 10px 13px;
+      color: var(--muted);
+      font-size: 0.8rem;
+      font-weight: bold;
+    }
+
+    .outputs {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+    }
+
+    .output {
+      min-height: 220px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: white;
+      text-decoration: none;
+    }
+
+    .output:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 18px 45px rgba(17, 36, 58, 0.1);
+    }
+
+    .output small {
+      margin-bottom: auto;
+      color: #147c9e;
+      font-weight: bold;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .output h3 {
+      margin: 30px 0 7px;
+      font-size: 1.3rem;
+    }
+
+    .output p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.86rem;
+    }
+
+    .talk {
+      display: grid;
+      grid-template-columns: 110px 1fr;
+      gap: 20px;
+      padding: 22px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .talk strong {
+      color: #147c9e;
+    }
+
+    .talk h3 {
+      margin-bottom: 5px;
+      font-size: 1.15rem;
+    }
+
+    .talk p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    footer {
+      padding: 25px 0;
+      background: #04101e;
+      color: #9bb0c2;
+      font-size: 0.82rem;
+    }
+
+    @media (max-width: 850px) {
+      .hero-grid,
+      .section-heading,
+      .about-grid,
+      .leadership-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-grid {
+        gap: 45px;
+        padding: 70px 0;
+      }
+
+      .project-details,
+      .outputs {
+        grid-template-columns: 1fr;
+      }
+
+      .section-heading {
+        gap: 5px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      body {
+        font-size: 16px;
+      }
+
+      .nav-inner {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 14px 0;
+      }
+
+      .nav-links {
+        width: 100%;
+        padding-bottom: 4px;
+      }
+
+      section {
+        padding: 70px 0;
+      }
+
+      .project {
+        grid-template-columns: 1fr;
+      }
+
+      .number {
+        padding: 8px 20px;
+        text-align: left;
+      }
+
+      .project-content {
+        padding: 25px;
+      }
+
+      .facts,
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+
+      figure:first-child,
+      figure:last-child {
+        grid-column: auto;
+      }
+
+      .talk {
+        grid-template-columns: 1fr;
+        gap: 3px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="wrap nav-inner">
+      <a class="name" href="#home">Katarina Andrade</a>
+
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#mentoring">Mentoring</a>
+        <a href="#outputs">Outputs</a>
+        <a href="#talks">Talks</a>
+        <a href="CV_Katarina_Andrade_Graduate_School.pdf" target="_blank">CV ↗</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="home">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Observational astrophysics · Northwestern University</p>
+
+        <h1>Katarina Viana de Souza Andrade</h1>
+
+        <p class="hero-text">
+          I study how we can recover the physical history of distant galaxies
+          from faint light using spectroscopy, careful data analysis, and
+          telescopes including JWST and Keck.
+        </p>
+
+        <div class="buttons">
+          <a class="button primary" href="#research">Explore my research ↓</a>
+
+          <a
+            class="button"
+            href="CV_Katarina_Andrade_Graduate_School.pdf"
+            target="_blank"
+          >
+            Download CV ↗
+          </a>
+        </div>
+      </div>
+
+      <aside class="research-card">
+        <div class="spectrum" aria-hidden="true"></div>
+
+        <h2>Reading galaxies’ chemical fingerprints</h2>
+
+        <p>
+          Galaxies across cosmic time encode their chemistry, gas density,
+          velocity, and energetic activity in their emission-line spectra.
+          My research asks how reliably we can read those signals.
+        </p>
+      </aside>
+    </div>
+  </header>
+
+  <main>
+    <section class="white" id="about">
+      <div class="wrap about-grid">
+        <div>
+          <p class="about-lead">
+            DNA carries the information of living beings. Galaxies have a kind
+            of “chemical DNA” too, encoded in the emission lines of their spectra.
+          </p>
+
+          <p>
+            I am a Brazilian undergraduate at Northwestern University pursuing
+            Theatre and Physics &amp; Astronomy. My research combines
+            observational astronomy, quantitative analysis, and science
+            communication.
+          </p>
+
+          <p>
+            At Northwestern’s Center for Interdisciplinary Exploration and
+            Research in Astrophysics, I study high-redshift star-forming
+            galaxies with Professor Allison Strom’s group. I have also conducted
+            research on JWST’s Little Red Dots at Yale and mentored an exoplanet
+            project through CIERA REACH.
+          </p>
+        </div>
+
+        <div class="facts">
+          <div class="fact">
+            <strong>z ≈ 2–3</strong>
+            <span>Primary redshift range of my galaxy-stacking research</span>
+          </div>
+
+          <div class="fact">
+            <strong>50</strong>
+            <span>KBSS and CECILIA spectra in my initial sample</span>
+          </div>
+
+          <div class="fact">
+            <strong>22</strong>
+            <span>Little Red Dot spectra analyzed during my Yale project</span>
+          </div>
+
+          <div class="fact">
+            <strong>Keck + JWST</strong>
+            <span>Ground- and space-based observational data</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="research">
+      <div class="wrap">
+        <div class="section-heading">
+          <div>
+            <p class="kicker">Selected research</p>
+            <h2>Questions, methods, and evidence</h2>
+          </div>
+
+          <p>
+            These are undergraduate projects and works in progress. Journal
+            articles linked as “peer-reviewed context” are background literature
+            and are not presented as my publications.
+          </p>
+        </div>
+
+        <div class="projects">
+          <article class="project">
+            <div class="number">01</div>
+
+            <div class="project-content">
+              <div class="tags">
+                <span class="tag">CIERA</span>
+                <span class="tag">2024–present</span>
+                <span class="tag">Galaxy evolution</span>
+              </div>
+
+              <h3>How reliable is spectral stacking for distant galaxies?</h3>
+
+              <p>
+                Astronomers stack spectra when individual emission lines are too
+                faint to measure. I am testing whether the stronger signal in a
+                stack preserves the metallicity and gas-density properties of
+                the individual galaxies used to create it.
+              </p>
+
+              <div class="project-details">
+                <div>
+                  <strong>Data</strong>
+                  <span>26 KBSS and 24 CECILIA galaxy spectra</span>
+                </div>
+
+                <div>
+                  <strong>Processing</strong>
+                  <span>
+                    Rest-frame alignment, slit-loss correction, interpolation,
+                    and sigma clipping
+                  </span>
+                </div>
+
+                <div>
+                  <strong>Analysis</strong>
+                  <span>
+                    Emission-line ratios, metallicity, gas density, and
+                    comparisons between individual spectra and stacks
+                  </span>
+                </div>
+              </div>
+
+              <details>
+                <summary>Read the project abstract</summary>
+
+                <p>
+                  Spectral stacking improves signal-to-noise by combining
+                  observations of similar galaxies. This enables measurements of
+                  lines that may be invisible in a single spectrum. My project
+                  quantifies how the nonlinear physical properties encoded in
+                  line ratios map onto mean, median, and summed spectra.
+                </p>
+              </details>
+
+              <div class="links">
+                <a
+                  class="link"
+                  href="Katarina_Andrade_Summer_Report%20(2).pdf"
+                  target="_blank"
+                >
+                  Research report ↗
+                </a>
+
+                <a
+                  class="link"
+                  href="https://doi.org/10.3847/2041-8213/ad07dc"
+                  target="_blank"
+                >
+                  Peer-reviewed CECILIA paper ↗
+                </a>
+
+                <a
+                  class="link"
+                  href="https://strom.physics.northwestern.edu/"
+                  target="_blank"
+                >
+                  Strom Research Group ↗
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="number">02</div>
+
+            <div class="project-content">
+              <div class="tags">
+                <span class="tag">Keck Observatory</span>
+                <span class="tag">MOSFIRE</span>
+                <span class="tag">Observing</span>
+              </div>
+
+              <h3>From Evanston to Hawaiʻi: deep spectra with Keck</h3>
+
+              <p>
+                I participated in a Keck/MOSFIRE observing run on Mauna Kea,
+                collecting deep near-infrared spectra of distant galaxies. The
+                experience connected the finished spectra on my computer to the
+                masks, exposures, calibrations, and observing conditions that
+                produce them.
+              </p>
+
+              <div class="project-details">
+                <div>
+                  <strong>Instrument</strong>
+                  <span>Keck I’s MOSFIRE near-infrared spectrograph</span>
+                </div>
+
+                <div>
+                  <strong>Strategy</strong>
+                  <span>Slit masks observing approximately 20–25 galaxies at once</span>
+                </div>
+
+                <div>
+                  <strong>Purpose</strong>
+                  <span>
+                    Expand the comparison sample and improve measurements of
+                    faint emission features
+                  </span>
+                </div>
+              </div>
+
+              <div class="links">
+                <a class="link" href="Expo2025.pdf" target="_blank">
+                  Project presentation ↗
+                </a>
+
+                <a
+                  class="link"
+                  href="https://www.keckobservatory.org/about/telescopes-instrumentation/"
+                  target="_blank"
+                >
+                  Keck instrumentation ↗
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="number">03</div>
+
+            <div class="project-content">
+              <div class="tags">
+                <span class="tag">Yale Astronomy</span>
+                <span class="tag">Summer 2025</span>
+                <span class="tag">JWST</span>
+              </div>
+
+              <h3>A spectroscopic analysis of the Little Red Dots</h3>
+
+              <p>
+                Little Red Dots are compact, unusually red sources found by JWST
+                in the early universe. Working with Professor Meg Urry and
+                Alessandro Peca, I searched their spectra for high-ionization
+                [Ne V] emission, a potential signature of accreting black holes.
+              </p>
+
+              <div class="project-details">
+                <div>
+                  <strong>Sample</strong>
+                  <span>24 candidates selected from JADES and 22 available spectra</span>
+                </div>
+
+                <div>
+                  <strong>Method</strong>
+                  <span>
+                    Redshift-aware line searches, local noise estimates, and
+                    signal-to-noise measurements
+                  </span>
+                </div>
+
+                <div>
+                  <strong>Result</strong>
+                  <span>
+                    No individual [Ne V] detection exceeded 3σ; the spectra
+                    instead provided quantitative upper limits
+                  </span>
+                </div>
+              </div>
+
+              <details>
+                <summary>Read the project abstract</summary>
+
+                <p>
+                  Rather than treating a non-detection as no result, I used the
+                  spectral noise surrounding each expected line location to
+                  calculate upper limits. Those constraints help establish the
+                  depth that future observations would need to reach.
+                </p>
+              </details>
+
+              <div class="links">
+                <a
+                  class="link"
+                  href="Little%20Red%20Dots%20Summer%2025%27%20YALE%20-%20Katarina%20Andrade%20(1).pdf"
+                  target="_blank"
+                >
+                  Full presentation ↗
+                </a>
+
+                <a
+                  class="link"
+                  href="https://archive.stsci.edu/hlsp/jades"
+                  target="_blank"
+                >
+                  JADES data ↗
+                </a>
+
+                <a
+                  class="link"
+                  href="https://doi.org/10.3847/1538-4357/adbc7d"
+                  target="_blank"
+                >
+                  Peer-reviewed LRD context ↗
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="number">04</div>
+
+            <div class="project-content">
+              <div class="tags">
+                <span class="tag">Gemini / NOIRLab</span>
+                <span class="tag">JWST imaging</span>
+                <span class="tag">Galaxy structure</span>
+              </div>
+
+              <h3>Compact stellar systems in the Coma Cluster</h3>
+
+              <p>
+                With Professor Kristin Chiboucas’s group, I analyze JWST images
+                of compact dwarf galaxies and ultra-compact dwarfs in the Coma
+                Cluster. I use two-dimensional light-profile modeling to
+                investigate their sizes and structures.
+              </p>
+
+              <div class="project-details">
+                <div>
+                  <strong>Data</strong>
+                  <span>High-resolution JWST imaging</span>
+                </div>
+
+                <div>
+                  <strong>Method</strong>
+                  <span>GALFIT modeling and residual inspection</span>
+                </div>
+
+                <div>
+                  <strong>Question</strong>
+                  <span>
+                    What can compact systems’ light profiles reveal about their
+                    origins?
+                  </span>
+                </div>
+              </div>
+
+              <div class="links">
+                <a
+                  class="link"
+                  href="https://doi.org/10.1088/0004-6256/139/6/2097"
+                  target="_blank"
+                >
+                  Peer-reviewed GALFIT paper ↗
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="dark" id="mentoring">
+      <div class="wrap">
+        <div class="section-heading">
+          <div>
+            <p class="kicker">Mentorship and outreach</p>
+            <h2>Research is also something we share</h2>
+          </div>
+
+          <p>
+            My theatre training influences how I communicate science: construct
+            a clear story, welcome the audience into it, and never confuse
+            jargon with depth.
+          </p>
+        </div>
+
+        <div class="leadership-grid">
+          <article class="dark-card">
+            <p class="kicker">CIERA REACH · 2026</p>
+
+            <h3>Detecting 51 Pegasi b using radial velocity</h3>
+
+            <p>
+              I mentored Lucas Hennessy through a three-week, one-on-one
+              exoplanet project using real ELODIE spectra. He used continuum
+              normalization, cross-correlation, Lomb–Scargle periodograms, and
+              phase folding to recover the periodic stellar motion caused by
+              51 Pegasi b.
+            </p>
+
+            <div class="links">
+              <a
+                class="link"
+                href="https://doi.org/10.1038/378355a0"
+                target="_blank"
+              >
+                Original discovery paper ↗
+              </a>
+
+              <a
+                class="link"
+                href="https://exoplanetarchive.ipac.caltech.edu/overview/51%20Peg%20b"
+                target="_blank"
+              >
+                NASA Exoplanet Archive ↗
+              </a>
+            </div>
+          </article>
+
+          <article class="dark-card">
+            <p class="kicker">Public astronomy</p>
+
+            <h3>Turning observing into an invitation</h3>
+
+            <p>
+              At Northwestern’s Dearborn Observatory, I operate the telescope
+              and guide visitors through the night sky. I have also supported
+              solar observing for teachers through CIERA’s Research Experiences
+              for Teachers program.
+            </p>
+
+            <p>
+              My outreach experience also includes approximately 8,000 Galaxy
+              Cruise classifications and mentoring more than 1,300
+              citizen-science participants.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="white">
+      <div class="wrap">
+        <div class="section-heading">
+          <div>
+            <p class="kicker">Research in practice</p>
+            <h2>At the telescope and with the public</h2>
+          </div>
+
+          <p>
+            Observing, research mentoring, and astronomy outreach through
+            CIERA, Dearborn Observatory, Yale, and Keck.
+          </p>
+        </div>
+
+        <div class="gallery">
+          <figure>
+            <img
+              src="2e603919-2f1e-45fd-9c8e-cbd288d85df8.png"
+              alt="Katarina participating in astronomy research"
+            >
+            <figcaption>Observational astronomy</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src="ca2e6481-1d83-4221-b1ce-99d7dae97768.png"
+              alt="Astronomy outreach"
+            >
+            <figcaption>Science outreach</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src="cc8afb51-afee-4c3a-97b1-db3f1391ec47.png"
+              alt="Telescope observing"
+            >
+            <figcaption>At the telescope</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src="0b2c3593-e61d-439b-a4d9-4540d36605f8.png"
+              alt="Research mentoring"
+            >
+            <figcaption>Research mentorship</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src="86efebc3-f0b9-4db0-9920-1bbabdf04faa.png"
+              alt="Astronomy education"
+            >
+            <figcaption>Making astronomy accessible</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="outputs">
+      <div class="wrap">
+        <div class="section-heading">
+          <div>
+            <p class="kicker">Selected outputs</p>
+            <h2>Reports, posters, and abstracts</h2>
+          </div>
+
+          <p>
+            Undergraduate research products are identified by format and kept
+            separate from the peer-reviewed background literature.
+          </p>
+        </div>
+
+        <div class="outputs">
+          <a
+            class="output"
+            href="Katarina_Andrade_Summer_Report%20(2).pdf"
+            target="_blank"
+          >
+            <small>Research report · PDF</small>
+            <h3>Spectral stacking and distant galaxies</h3>
+            <p>Processing, stack construction, and interpretation.</p>
+          </a>
+
+          <a
+            class="output"
+            href="Little%20Red%20Dots%20Summer%2025%27%20YALE%20-%20Katarina%20Andrade%20(1).pdf"
+            target="_blank"
+          >
+            <small>Research presentation · PDF</small>
+            <h3>A Spectroscopic Analysis of the Little Red Dots</h3>
+            <p>Yale Astronomy Summer Research Symposium, 2025.</p>
+          </a>
+
+          <a class="output" href="Expo2025.pdf" target="_blank">
+            <small>Poster or presentation · PDF</small>
+            <h3>Research Expo 2025</h3>
+            <p>A visual overview of the research question and workflow.</p>
+          </a>
+
+          <a class="output" href="Resumo%20Expandido.pdf" target="_blank">
+            <small>Extended abstract · Portuguese</small>
+            <h3>Black holes at the centers of galaxies</h3>
+            <p>Earlier research communication in Portuguese.</p>
+          </a>
+
+          <a class="output" href="Abstract%20(1).pdf" target="_blank">
+            <small>Research abstract · PDF</small>
+            <h3>Selected astronomy abstract</h3>
+            <p>Project motivation, approach, and scientific context.</p>
+          </a>
+
+          <a
+            class="output"
+            href="CV_Katarina_Andrade_Graduate_School.pdf"
+            target="_blank"
+          >
+            <small>Curriculum vitae · PDF</small>
+            <h3>Academic CV</h3>
+            <p>Research, presentations, outreach, education, and awards.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="white" id="talks">
+      <div class="wrap">
+        <div class="section-heading">
+          <div>
+            <p class="kicker">Presentations and funding</p>
+            <h2>Communicating the work</h2>
+          </div>
+
+          <p>
+            Selected presentations and competitively funded undergraduate
+            research projects.
+          </p>
+        </div>
+
+        <article class="talk">
+          <strong>2025</strong>
+          <div>
+            <h3>“A Spectroscopic Analysis of the Little Red Dots”</h3>
+            <p>Summer Research Symposium, Yale Department of Astronomy.</p>
+          </div>
+        </article>
+
+        <article class="talk">
+          <strong>2025</strong>
+          <div>
+            <h3>Academic Year Undergraduate Research Grant</h3>
+            <p>
+              “From Evanston to Hawaii, a Galactic Journey with Keck
+              Observations.” Northwestern University.
+            </p>
+          </div>
+        </article>
+
+        <article class="talk">
+          <strong>2024</strong>
+          <div>
+            <h3>Summer Undergraduate Research Grant</h3>
+            <p>
+              “Galactic Data’s Journey: Unveiling the Universe’s Hidden
+              Narratives.” Northwestern University.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      © 2026 Katarina Viana de Souza Andrade · Observational Astrophysics
+    </div>
+  </footer>
+</body>
+</html>
